@@ -15,7 +15,6 @@
     <a href="../index.html">Inicio</a>
     <a href="./version.html">Versiones</a>
     <a href="./ejemplos.html">Ejemplos</a>
-    <a href="./glosario.html">Glosario</a>
   </nav>
 
   <main>
@@ -33,76 +32,99 @@
             </tr>
           </thead>
           <tbody>
+            <tr><td>ES1</td><td>1997</td><td>Primera versión oficial.</td></tr>
+            <tr><td>ES2</td><td>1998</td><td>Ajustes menores.</td></tr>
+            <tr><td>ES3</td><td>1999</td><td>Expresiones regulares, try/catch, mejoras en strings y arrays.</td></tr>
+            <tr><td>ES4</td><td>❌ Cancelada</td><td>Fue demasiado ambiciosa, nunca se completó.</td></tr>
+            <tr><td>ES5</td><td>2009</td><td>Strict mode, JSON, nuevos métodos de arrays (forEach, map, filter), getters/setters.</td></tr>
+            <tr><td>ES6 (ES2015)</td><td>2015</td><td>let, const, clases, módulos, arrow functions, promesas, templates, spread/rest.</td></tr>
+            <tr><td>ES7 (ES2016)</td><td>2016</td><td>Array.prototype.includes, operador de exponenciación (**).</td></tr>
+            <tr><td>ES8 (ES2017)</td><td>2017</td><td>Async/await, mejoras en objetos (Object.entries, Object.values).</td></tr>
+            <tr><td>ES9 (ES2018)</td><td>2018</td><td>Rest/spread en objetos, Promise.finally(), mejoras en RegExp.</td></tr>
+            <tr><td>ES10 (ES2019)</td><td>2019</td><td>Array.flat(), Object.fromEntries, trimStart/End.</td></tr>
+            <tr><td>ES11 (ES2020)</td><td>2020</td><td>Nullish coalescing (??), optional chaining (?.), Promise.allSettled().</td></tr>
+            <tr><td>ES12 (ES2021)</td><td>2021</td><td>replaceAll, asignación lógica (&&=, ||=, ??=).</td></tr>
+            <tr><td>ES13 (ES2022)</td><td>2022</td><td>Top-level await, clases privadas (#), at() para arrays.</td></tr>
+            <tr><td>ES14 (ES2023)</td><td>2023</td><td>Mejoras menores: Array findLast, símbolos como claves privadas, with para hashbang.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>🆚 Diferencias notorias por versión</h2>
+      <p>Resumen de los cambios importantes en cada versión de ECMAScript y ejemplos clave:</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
             <tr>
-              <td>ES1</td>
-              <td>1997</td>
-              <td>Primera versión oficial.</td>
+              <th>Versión</th>
+              <th>Año</th>
+              <th>Cambios importantes</th>
+              <th>Ejemplos clave</th>
             </tr>
-            <tr>
-              <td>ES2</td>
-              <td>1998</td>
-              <td>Ajustes menores.</td>
-            </tr>
-            <tr>
-              <td>ES3</td>
-              <td>1999</td>
-              <td>Expresiones regulares, try/catch, mejoras en strings y arrays.</td>
-            </tr>
-            <tr>
-              <td>ES4</td>
-              <td>❌ Cancelada</td>
-              <td>Fue demasiado ambiciosa, nunca se completó.</td>
-            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>ES5</td>
               <td>2009</td>
-              <td>Strict mode, JSON, nuevos métodos de arrays (forEach, map, filter), getters/setters.</td>
+              <td>Moderniza la base de JavaScript</td>
+              <td>strict mode, JSON.parse(), métodos como .forEach(), .map()</td>
             </tr>
             <tr>
               <td>ES6 (ES2015)</td>
               <td>2015</td>
-              <td>let, const, clases, módulos, arrow functions, promesas, templates, spread/rest.</td>
+              <td>🚀 Gran cambio: nuevas formas de declarar variables, clases, funciones, promesas, módulos</td>
+              <td>let, const, arrow functions (=&gt;), clases, Promise, import/export, template literals Hola ${nombre}</td>
             </tr>
             <tr>
               <td>ES7 (ES2016)</td>
               <td>2016</td>
-              <td>Array.prototype.includes, operador de exponenciación (**).</td>
+              <td>Cambios pequeños</td>
+              <td>Array.prototype.includes(), operador de potencia **</td>
             </tr>
             <tr>
               <td>ES8 (ES2017)</td>
               <td>2017</td>
-              <td>Async/await, mejoras en objetos (Object.entries, Object.values).</td>
+              <td>Simplificación del asincronismo</td>
+              <td>async/await, Object.entries(), Object.values()</td>
             </tr>
             <tr>
               <td>ES9 (ES2018)</td>
               <td>2018</td>
-              <td>Rest/spread en objetos, Promise.finally(), mejoras en RegExp.</td>
+              <td>Mejoras en objetos y asincronismo</td>
+              <td>Promise.finally(), spread/rest en objetos {...obj}</td>
             </tr>
             <tr>
               <td>ES10 (ES2019)</td>
               <td>2019</td>
-              <td>Array.flat(), Object.fromEntries, trimStart/End.</td>
+              <td>Métodos útiles en arrays y strings</td>
+              <td>Array.flat(), Object.fromEntries(), trimStart/trimEnd()</td>
             </tr>
             <tr>
               <td>ES11 (ES2020)</td>
               <td>2020</td>
-              <td> Nullish coalescing (??), optional chaining (?.), Promise.allSettled().</td>
+              <td>Más control sobre valores nulos y errores</td>
+              <td>?? (nullish coalescing), ?. (optional chaining), Promise.allSettled()</td>
             </tr>
             <tr>
               <td>ES12 (ES2021)</td>
               <td>2021</td>
-              <td>replaceAll, asignación lógica (&&=, ||=, ??=).</td>
+              <td>Syntactic sugar + mejoras útiles</td>
+              <td>String.replaceAll(), operadores lógicos con asignación (&&=, ||=, ??=)</td>
             </tr>
             <tr>
               <td>ES13 (ES2022)</td>
               <td>2022</td>
-              <td>Top-level await, clases privadas (#), at() para arrays.</td>
+              <td>Mejora en clases y promesas</td>
+              <td>#prop (campos privados), top-level await, .at() en arrays</td>
             </tr>
             <tr>
               <td>ES14 (ES2023)</td>
               <td>2023</td>
-              <td>Mejoras menores: Array findLast, símbolos como claves privadas, with para hashbang.
-            </td>
+              <td>Mejoras menores pero útiles</td>
+              <td>findLast(), findLastIndex(), símbolos como claves privadas</td>
             </tr>
           </tbody>
         </table>
