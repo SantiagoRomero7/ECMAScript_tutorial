@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplos de ECMAScript</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ejemplos de Funcionalidades por Versión de ECMAScript</h1>
+  </header>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="./version.html">Versiones</a>
+    <a href="./ejemplos.html">Ejemplos</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>ES5 (2009)</h2>
+      <pre><code>
+// Strict mode
+"use strict";
+
+// Métodos útiles
+var arr = [1, 2, 3];
+arr.forEach(function(num) {
+  console.log(num * 2);
+});
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES6 (ES2015)</h2>
+      <pre><code>
+// let y const
+let x = 10;
+const y = 20;
+
+// Arrow function
+const suma = (a, b) => a + b;
+
+// Clases
+class Persona {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+  saludar() {
+    return `Hola, ${this.nombre}!`;
+  }
+}
+
+// Template literals
+const nombre = "Ana";
+console.log(`Hola, ${nombre}`);
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES7 (2016)</h2>
+      <pre><code>
+// Array.includes
+const nums = [1, 2, 3];
+console.log(nums.includes(2)); // true
+
+// Operador exponenciación
+console.log(2 ** 3); // 8
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES8 (2017)</h2>
+      <pre><code>
+// Async/Await
+async function saludo() {
+  return "Hola async!";
+}
+
+// Object.entries / Object.values
+const obj = {a: 1, b: 2};
+console.log(Object.entries(obj)); // [["a",1], ["b",2]]
+console.log(Object.values(obj));  // [1, 2]
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES9 (2018)</h2>
+      <pre><code>
+// Spread/rest en objetos
+const obj1 = {a:1};
+const obj2 = {...obj1, b:2};
+console.log(obj2); // {a:1, b:2}
+
+// Promise.finally()
+Promise.resolve()
+  .then(() => console.log("Éxito"))
+  .finally(() => console.log("Fin"));
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES10 (2019)</h2>
+      <pre><code>
+// Array.flat()
+const arr = [1, [2, 3], [4, [5]]];
+console.log(arr.flat(2)); // [1,2,3,4,5]
+
+// Object.fromEntries()
+const entries = [['name', 'Ana'], ['age', 25]];
+console.log(Object.fromEntries(entries)); // {name: "Ana", age: 25}
+
+// trimStart / trimEnd
+const texto = "  hola  ";
+console.log(texto.trimStart()); // "hola  "
+console.log(texto.trimEnd());   // "  hola"
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES11 (2020)</h2>
+      <pre><code>
+// Nullish coalescing ??
+const val = null ?? "valor por defecto";
+console.log(val); // "valor por defecto"
+
+// Optional chaining ?.
+const usuario = {perfil: {nombre: "Ana"}};
+console.log(usuario.perfil?.nombre); // "Ana"
+console.log(usuario.direccion?.ciudad); // undefined
+
+// Promise.allSettled()
+Promise.allSettled([
+  Promise.resolve("Ok"),
+  Promise.reject("Error")
+]).then(results => console.log(results));
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES12 (2021)</h2>
+      <pre><code>
+// replaceAll()
+const texto = "hola mundo, mundo!";
+console.log(texto.replaceAll("mundo", "JS")); // "hola JS, JS"
+
+// Asignación lógica
+let a = true;
+a &&= false;
+console.log(a); // false
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES13 (2022)</h2>
+      <pre><code>
+// Campos privados en clases
+class Persona {
+  #nombre;
+  constructor(nombre) {
+    this.#nombre = nombre;
+  }
+  saludar() {
+    return `Hola, ${this.#nombre}`;
+  }
+}
+const p = new Persona("Ana");
+console.log(p.saludar()); // Hola, Ana
+
+// top-level await (solo en módulos)
+// const data = await fetch("url");
+
+// Método at() para arrays
+const arr = [10, 20, 30];
+console.log(arr.at(-1)); // 30
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>ES14 (2023)</h2>
+      <pre><code>
+// findLast() y findLastIndex()
+const arr = [1, 2, 3, 2, 1];
+console.log(arr.findLast(x => x === 2)); // 2
+console.log(arr.findLastIndex(x => x === 2)); // 3
+
+// Símbolos como claves privadas
+const sym = Symbol("clave");
+const obj = {
+  [sym]: "valor privado"
+};
+console.log(obj[sym]); // valor privado
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>ECMAScript Tutorial © 2025</p>
+    <p>Santiago Romero - Nicolás Riaño</p>
+  </footer>
+</body>
+</html>
