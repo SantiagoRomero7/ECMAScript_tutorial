@@ -199,4 +199,48 @@ footer p {
     background-color: #f0f0f0;
     color: #000;
   }
+
+    main {
+      padding: 1rem 0.5rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  
+    p, li {
+      font-size: 1rem;
+    }
+  
+    pre {
+      font-size: 0.85rem;
+      padding: 0.8rem 1rem;
+    }
+  
+    
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    table {
+      min-width: 600px; 
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      padding: 10px 12px;
+    }
+  
+    nav a {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+  
+    footer {
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+  
   
